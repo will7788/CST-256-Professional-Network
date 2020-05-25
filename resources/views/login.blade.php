@@ -55,19 +55,22 @@ div.content {
     <div class="content">
       <h3>Login</h3>
       <hr />
-      <form>
+      <form method="POST" action="/logincontrol">
+      <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>">
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Email">
+          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
         </div>
         <div class="form-group">
           <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Password">
+          <input type="password" class="form-control" name="email" id="password" placeholder="Password">
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
         <hr />
-        <button type="button" class="btn btn-link">Register</button>
       </form>
+      <form action="/register">
+        <button type="submit" class="btn btn-link">Register</button>
+        </form>
     </div>
     </span>
   </div>

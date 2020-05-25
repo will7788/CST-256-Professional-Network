@@ -70,8 +70,10 @@ div.content {
         </div>
         <button type="submit" class="btn btn-primary">Register</button>
         <hr />
-        <button type="button" class="btn btn-link">Login</button>
       </form>
+      <form action="/login">
+        <button type="submit" class="btn btn-link">Login</button>
+        </form>
     </div>
     </span>
   </div>
